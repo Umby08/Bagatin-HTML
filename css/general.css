@@ -57,6 +57,7 @@ a {
 
 .header__netflix {
     width: 100px;
+    display: block;
 }
 
 /* SIDEBAR */
@@ -108,4 +109,15 @@ a {
 .menu-toggle:checked ~ .overlay {
     opacity: 1;
     pointer-events: auto;
+}
+
+@media (max-width: 600px) {
+    .header__titolo-1,
+    .header__titolo-2 {
+        font-size: 24px;
+    }
+
+    .header__netflix {
+        width: 80px;
+    }
 }
