@@ -24,6 +24,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.selected-page {
+    color: crimson;
+}
+
 /* CHECKBOX */
 .menu-toggle {
     display: none;
