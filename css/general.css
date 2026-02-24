@@ -3,14 +3,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
     text-decoration: none;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* CHECKBOX */
@@ -60,6 +71,15 @@ a {
     display: block;
 }
 
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin: 1%;
+}
+
 /* SIDEBAR */
 .sidebar {
     position: fixed;
@@ -91,7 +111,7 @@ a {
 }
 
 .sidebar__nav a:hover {
-    color: crimson;
+    color: #dc143c;
 }
 
 /* OVERLAY */
@@ -109,6 +129,41 @@ a {
 .menu-toggle:checked ~ .overlay {
     opacity: 1;
     pointer-events: auto;
+}
+
+/* BACK TO TOP */
+/* bottone torna su */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+
+    border-radius: 50%;
+    background-color: #1f1f1f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    transform: translateY(-4px);
+    background-color: #333;
+}
+
+.back-to-top img {
+    width: 20px;
+    height: 20px;
+
+    filter: invert(1);
 }
 
 @media (max-width: 600px) {
