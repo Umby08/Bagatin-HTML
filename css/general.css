@@ -170,6 +170,7 @@ footer {
     filter: invert(1);
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 600px) {
     .header__titolo-1,
     .header__titolo-2 {
