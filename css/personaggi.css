@@ -1,0 +1,83 @@
+/* =========================
+   LAYOUT BASE
+========================= */
+.layout-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* =========================
+   CARD PERSONAGGI
+========================= */
+.character-card {
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.character-card__header {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.character-card__photo {
+    width: 180px;
+    border-radius: 8px;
+}
+
+.character-card__info h2 {
+    color: #ff4444;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   ACCORDION
+========================= */
+.accordion {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.accordion__toggle {
+    display: none;
+}
+
+.accordion__title {
+    display: block;
+    width: 100%;              
+    
+    background: #444;
+    padding: 12px;
+    margin-top: 10px;
+
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    box-sizing: border-box;   
+}
+
+.accordion__title:hover {
+    background: #555;
+}
+
+.accordion__content {
+    display: none;
+    width: 100%;              
+    background: #3a3a3a;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.accordion__toggle:checked + .accordion__title + .accordion__content {
+    display: block;
+}
