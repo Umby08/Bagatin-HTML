@@ -1,7 +1,13 @@
 main {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+}
+
+.p--mod {
+    text-align: justify;
 }
 
 .textcontainer {
@@ -27,7 +33,6 @@ main {
     display: flex;
     flex-direction: row;  
     gap: 20px;
-    width: 100%;
 }
 
 .character-photo {
@@ -48,16 +53,17 @@ main {
 
 /* MEDIA QUERIES */
 @media (max-width: 600px) {
-    .character-header {
+    .character-card {
         flex-direction: column;
         align-items: center;
     }
 
     .character-photo {
-        max-width: 100%;
+        width: 100%;
+        max-width: none;
     }
 
     .character-info {
-        text-align: center;
+        width: 100%;
     }
 }

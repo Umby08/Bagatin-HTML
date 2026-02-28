@@ -16,6 +16,7 @@ h2 {
 .p--mod {
     color: white;
     padding: 0 10px 10px 10px;
+    text-align: justify;
 }
 
 /* CONTAINER */
