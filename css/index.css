@@ -11,19 +11,47 @@ h2 {
     padding: 10px;
 }
 
+.h2--mod {
+    color: purple;
+    padding: 10px;
+}
+
 .p--mod {
     color: #fff;    
+    padding: 0 10px 10px 10px;
+    text-align: justify;
+}
+
+.p--mod2 {
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.p--mod3 {
+    text-align: justify;
+    color: black;
     padding: 0 10px 10px 10px;
 }
 
 .main__hero {
-    width: 100%;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    gap: 5px;
 }
 
 .main__hero-img {
-    width: 100%;
     height: auto;
+    border-radius: 8px;
+    max-width: 50%;
+}
+
+.main__hero-text {
+    padding: 20px;
+    color: black;
+    max-width: 50%;
 }
 
 .main__box {
@@ -31,9 +59,21 @@ h2 {
     gap: 40px;
     align-items: center;
     max-width: 100%;
-    margin: 1%;
+    margin: 20px;
     padding: 0 20px;
     background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #00000066;
+}
+
+.main__box--mod {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    max-width: 100%;
+    margin: 20px;
+    padding: 0 20px;
+    background-color: #828181;
     border-radius: 8px;
     box-shadow: 0 4px 10px #00000066;
 }
@@ -60,9 +100,50 @@ h2 {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .main__box {
         flex-direction: column;
         text-align: center;
+        gap: 0px;
+    }
+
+    .main__hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__hero-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main__hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main__box--mod {
+        flex-direction: column;
+        text-align: center;
+        gap: 0px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main__hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .main__hero-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main__hero-text {
+        max-width: 100%;
+        margin-bottom: 0px;
+        gap: 0px;
     }
 }

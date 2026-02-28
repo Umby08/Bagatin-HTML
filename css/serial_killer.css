@@ -24,10 +24,6 @@ main {
     color: white;
     margin: 20px;
     box-shadow: 0 4px 10px #00000066;
-}
-
-/* Header personaggio */
-.character-header {
     display: flex;
     flex-direction: row;  
     gap: 20px;
@@ -35,14 +31,14 @@ main {
 }
 
 .character-photo {
-    width: 100%;
-    max-width: 220px;
+    width: 20%;
+    max-width: 200px;
     border-radius: 8px;
     object-fit: cover;
 }
 
 .character-info {
-    width: 100%;
+    width: 80%;
 }
 
 .character-info h2 {
