@@ -1,0 +1,51 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textcontainer {
+    max-width: 1200px;
+    background-color: #d0d034;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* =========================
+   CARD PERSONAGGIO
+========================= */
+.character-card {
+    background: #2b2b2b;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px #00000066;
+}
+
+/* Header personaggio */
+.character-header {
+    display: flex;
+    flex-direction: row;  
+    gap: 20px;
+    width: 100%;
+}
+
+.character-photo {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.character-info {
+    width: 100%;
+}
+
+.character-info h2 {
+    margin-bottom: 10px;
+    color: crimson;
+}
