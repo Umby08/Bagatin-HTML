@@ -99,6 +99,12 @@ h2 {
     flex-direction: row-reverse;
 }
 
+.img-res {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* Responsive */
 @media (max-width: 800px) {
     .main__box {
