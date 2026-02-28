@@ -81,3 +81,16 @@ ul {
 .accordion__toggle:checked + .accordion__title + .accordion__content {
     display: block;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+    .character-card__header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-card__photo {
+        width: 100%;
+        max-width: 300px;
+    }
+}
